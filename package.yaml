@@ -1,0 +1,16 @@
+name: adventofcode2020
+
+dependencies:
+  - base >= 4.7 && < 5
+
+ghc-options: -Wall
+
+executables:
+  day1:
+    source-dirs: src/Day1
+    main: Main.hs
+    dependencies:
+    - adventofcode2020
+library:
+  source-dirs: src/Common
+  exposed-modules: Common

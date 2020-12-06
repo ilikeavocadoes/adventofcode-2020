@@ -2,6 +2,7 @@ name: adventofcode2020
 
 dependencies:
   - base >= 4.7 && < 5
+  - protolude
 
 ghc-options: -Wall
 

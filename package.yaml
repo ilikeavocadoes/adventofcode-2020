@@ -6,9 +6,16 @@ dependencies:
 
 ghc-options: -Wall
 
+default-extensions: NoImplicitPrelude
+
 executables:
   day1:
     source-dirs: src/Day1
+    main: Main.hs
+    dependencies:
+    - adventofcode2020
+  day5:
+    source-dirs: src/Day5
     main: Main.hs
     dependencies:
     - adventofcode2020

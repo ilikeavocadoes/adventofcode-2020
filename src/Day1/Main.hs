@@ -1,6 +1,6 @@
 module Main where
 
-import Common
+import Prelude
 
 main :: IO ()
 main = do

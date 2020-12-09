@@ -3,6 +3,8 @@ name: adventofcode2020
 dependencies:
   - base >= 4.7 && < 5
   - protolude
+  - attoparsec
+  - containers
 
 ghc-options: -Wall
 
@@ -10,15 +12,20 @@ default-extensions: NoImplicitPrelude
 
 executables:
   day1:
-    source-dirs: src/Day1
+    source-dirs: src/apps/Day1
     main: Main.hs
     dependencies:
     - adventofcode2020
   day5:
-    source-dirs: src/Day5
+    source-dirs: src/apps/Day5
+    main: Main.hs
+    dependencies:
+    - adventofcode2020
+  day8:
+    source-dirs: src/apps/Day8
     main: Main.hs
     dependencies:
     - adventofcode2020
 library:
-  source-dirs: src/Common
+  source-dirs: src/library
   exposed-modules: Common

@@ -10,4 +10,7 @@ input = do
   contents <- inputRaw
   return $ lines contents
 
-data Seat = Seat Partition Partition Partition Partition Partition Partition Partition Partition Partition Partition
+main :: IO ()
+main = return ()
+
+-- data Seat = Seat Partition Partition Partition Partition Partition Partition Partition Partition Partition Partition

@@ -5,10 +5,13 @@ dependencies:
   - protolude
   - attoparsec
   - containers
+  - text
 
 ghc-options: -Wall
 
-default-extensions: NoImplicitPrelude
+default-extensions:
+  - NoImplicitPrelude
+  - OverloadedStrings
 
 executables:
   day1:
@@ -23,6 +26,11 @@ executables:
     - adventofcode2020
   day8:
     source-dirs: src/apps/Day8
+    main: Main.hs
+    dependencies:
+    - adventofcode2020
+  day9:
+    source-dirs: src/apps/Day9
     main: Main.hs
     dependencies:
     - adventofcode2020

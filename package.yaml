@@ -6,8 +6,10 @@ dependencies:
   - attoparsec
   - containers
   - text
+  - pretty-simple
 
-ghc-options: -Wall
+ghc-options:
+  - -Wall
 
 default-extensions:
   - NoImplicitPrelude
@@ -34,6 +36,16 @@ executables:
     main: Main.hs
     dependencies:
     - adventofcode2020
+  day13:
+    source-dirs: src/apps/Day13
+    main: Main.hs
+    dependencies:
+    - adventofcode2020
+    ghc-options:
+      - -O2
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
 library:
   source-dirs: src/library
   exposed-modules: Common
